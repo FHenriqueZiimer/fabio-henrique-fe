@@ -1,0 +1,79 @@
+import { education, certifications, languages } from "@/lib/data";
+
+export function Education() {
+  return (
+    <section id="formacao" className="section">
+      <div className="container-x">
+        <p className="eyebrow">Formação</p>
+        <h2 className="section-title">Educação, certificações e idiomas</h2>
+
+        <div className="mt-16 grid grid-cols-1 items-start gap-12 md:grid-cols-[1.5fr_1fr] md:gap-14">
+          <div className="flex flex-col">
+            {education.map((ed) => (
+              <article
+                key={ed.school}
+                className="border-t border-border py-8 first:border-t-0 first:pt-0"
+              >
+                <div className="flex flex-wrap items-baseline justify-between gap-2">
+                  <h3 className="text-[1.2rem] font-semibold tracking-[-0.01em]">
+                    {ed.school}
+                  </h3>
+                  <span className="text-[13px] text-faint">{ed.period}</span>
+                </div>
+                <p className="mt-1.5 text-[14.5px] font-medium text-muted">
+                  {ed.degree}
+                </p>
+                <p className="mt-3.5 text-[14.5px] leading-[1.7] text-muted">
+                  {ed.description}
+                </p>
+              </article>
+            ))}
+          </div>
+
+          <aside className="flex flex-col gap-6">
+            <div className="rounded border border-border bg-background p-7">
+              <h3 className="mb-2 text-xs font-semibold uppercase tracking-[0.1em] text-faint">
+                Certificações
+              </h3>
+              <ul>
+                {certifications.map((c) => (
+                  <li
+                    key={c.name}
+                    className="flex items-center justify-between gap-3 border-t border-border py-4"
+                  >
+                    <div className="flex flex-col">
+                      <strong className="text-[14.5px] font-medium">{c.name}</strong>
+                      <span className="text-[13px] text-faint">{c.issuer}</span>
+                    </div>
+                    <span className="whitespace-nowrap text-[12.5px] text-muted">
+                      {c.date}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="rounded border border-border bg-background p-7">
+              <h3 className="mb-2 text-xs font-semibold uppercase tracking-[0.1em] text-faint">
+                Idiomas
+              </h3>
+              <ul>
+                {languages.map((l) => (
+                  <li
+                    key={l.name}
+                    className="flex items-center justify-between gap-3 border-t border-border py-4"
+                  >
+                    <strong className="text-[14.5px] font-medium">{l.name}</strong>
+                    <span className="whitespace-nowrap text-[12.5px] text-muted">
+                      {l.level}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  );
+}
