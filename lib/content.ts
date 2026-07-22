@@ -38,9 +38,9 @@ const pt = {
     title: "Stack e áreas de atuação",
     lead: "Tecnologias e domínios que uso para construir produtos escaláveis, integrar sistemas corporativos e automatizar processos com IA.",
     groups: [
-      { title: "Frontend", items: ["Next.js", "React.js", "React Native", "Vue.js", "Material UI", "JavaScript"] },
+      { title: "Frontend & UI/UX", items: ["Next.js", "React.js", "React Native", "Vue.js", "Material UI", "UI/UX", "Sites responsivos", "JavaScript"] },
       { title: "Backend", items: ["NestJS", "Node.js", "TypeScript", "APIs REST", "TypeORM", "MongoDB", "PostgreSQL"] },
-      { title: "Cloud & DevOps", items: ["AWS", "Docker", "CI/CD", "GitHub Actions", "Jest", "Cypress", "Vercel"] },
+      { title: "Cloud & DevOps", items: ["AWS", "Docker", "CI/CD", "Git Flow", "GitHub Actions", "Jest", "Cypress", "Vercel"] },
       { title: "Arquitetura & Liderança", items: ["Arquitetura de Soluções", "Soluções escaláveis", "Análise de trade-offs (prós e contras)", "Tomada de decisão", "Mentoria de juniores", "Code review"] },
       { title: "IA & Integrações", items: ["OpenAI", "AWS Textract", "Automação com IA", "Integração com ERP", "Microsserviços", "APIs REST"] },
     ],
@@ -281,9 +281,9 @@ const en: Dict = {
     title: "Stack and areas of expertise",
     lead: "Technologies and domains I use to build scalable products, integrate enterprise systems and automate processes with AI.",
     groups: [
-      { title: "Frontend", items: ["Next.js", "React.js", "React Native", "Vue.js", "Material UI", "JavaScript"] },
+      { title: "Frontend & UI/UX", items: ["Next.js", "React.js", "React Native", "Vue.js", "Material UI", "UI/UX", "Responsive design", "JavaScript"] },
       { title: "Backend", items: ["NestJS", "Node.js", "TypeScript", "REST APIs", "TypeORM", "MongoDB", "PostgreSQL"] },
-      { title: "Cloud & DevOps", items: ["AWS", "Docker", "CI/CD", "GitHub Actions", "Jest", "Cypress", "Vercel"] },
+      { title: "Cloud & DevOps", items: ["AWS", "Docker", "CI/CD", "Git Flow", "GitHub Actions", "Jest", "Cypress", "Vercel"] },
       { title: "Architecture & Leadership", items: ["Solutions Architecture", "Scalable solutions", "Trade-off analysis (pros & cons)", "Decision making", "Mentoring juniors", "Code review"] },
       { title: "AI & Integrations", items: ["OpenAI", "AWS Textract", "AI Automation", "ERP Integration", "Microservices", "REST APIs"] },
     ],

@@ -28,6 +28,9 @@ export const siteConfig = {
     "tomada de decisão técnica",
     "mentoria de desenvolvedores juniores",
     "code review",
+    "UI/UX",
+    "sites responsivos",
+    "Git Flow",
     // Habilidades / IA (do profissional)
     "integração de IA em produção",
     "automação de processos com IA",
