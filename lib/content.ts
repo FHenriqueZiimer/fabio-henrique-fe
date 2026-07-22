@@ -1,5 +1,3 @@
-// Conteúdo bilíngue do portfólio (PT/EN). Edite aqui para atualizar textos.
-// `pt` é a fonte da verdade da estrutura; `en` precisa ter o mesmo formato.
 
 const pt = {
   nav: {
