@@ -43,7 +43,7 @@ export function Footer() {
       </div>
 
       <div className="container-x flex flex-wrap justify-between gap-3 pt-6 text-[12.5px] text-faint">
-        <span>© {new Date().getFullYear()} Fábio Henrique</span>
+        <span>© {new Date().getFullYear()} Fábio Henrique Ferreira</span>
         <span>{footer.location}</span>
       </div>
     </footer>

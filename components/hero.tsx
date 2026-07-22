@@ -15,9 +15,9 @@ export function Hero() {
 
           <h1
             id="hero-title"
-            className="mt-1.5 text-[clamp(2.75rem,6.5vw,4.5rem)] font-semibold leading-none tracking-tightest"
+            className="mt-1.5 text-[clamp(2.5rem,6vw,4.25rem)] font-semibold leading-[1.02] tracking-tightest"
           >
-            Fábio Henrique
+            Fábio Henrique Ferreira
           </h1>
 
           <p className="mt-7 text-[1.15rem] leading-[1.7] text-muted">{t.hero.lead}</p>
