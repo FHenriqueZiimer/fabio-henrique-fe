@@ -231,6 +231,8 @@ const pt = {
     eyebrow: "Contato",
     title: "Vamos construir algo juntos?",
     lead: "Aberto a conversar sobre projetos de arquitetura, integrações corporativas, automação com IA e desenvolvimento Full Stack.",
+    linkedinTitle: "Vamos nos conectar",
+    linkedinCta: "Conectar no LinkedIn",
   },
   footer: {
     tagline: "Engenheiro de Software · Arquiteto de Soluções",
@@ -471,6 +473,8 @@ const en: Dict = {
     eyebrow: "Contact",
     title: "Let's build something together?",
     lead: "Open to talk about architecture projects, enterprise integrations, AI automation and Full Stack development.",
+    linkedinTitle: "Let's connect",
+    linkedinCta: "Connect on LinkedIn",
   },
   footer: {
     tagline: "Software Engineer · Solutions Architect",
