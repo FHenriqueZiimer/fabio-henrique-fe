@@ -34,20 +34,13 @@ export const metadata: Metadata = {
     siteName: `${siteConfig.name} — Portfólio`,
     title: `${siteConfig.name} — ${siteConfig.role}`,
     description: siteConfig.description,
-    images: [
-      {
-        url: "/profile.png",
-        width: 1200,
-        height: 630,
-        alt: `${siteConfig.name} — ${siteConfig.role}`,
-      },
-    ],
+    // A imagem vem de app/opengraph-image.tsx (gerada dinamicamente).
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.role}`,
     description: siteConfig.description,
-    images: ["/profile.png"],
+    // A imagem vem de app/twitter-image.tsx.
   },
   robots: {
     index: true,
@@ -63,6 +56,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
+  },
+  verification: {
+    google: siteConfig.googleSiteVerification,
   },
 };
 

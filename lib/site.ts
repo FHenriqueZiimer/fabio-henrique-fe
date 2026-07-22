@@ -3,8 +3,8 @@ export const siteConfig = {
   name: "Fábio Henrique Ferreira",
   shortName: "Fábio Henrique",
   role: "Engenheiro de Software · Arquiteto de Soluções",
-  // Troque pelo seu domínio final (ex.: https://fabiohenrique.dev)
-  url: "https://fabiohenrique.com.br",
+  // URL onde o site está publicado. Troque quando tiver domínio próprio.
+  url: "https://fabio-henrique-fe.vercel.app",
   locale: "pt-BR",
   description:
     "Fábio Henrique Ferreira — Engenheiro de Software e Arquiteto de Soluções com mais de 7 anos de experiência, especializado em sistemas escaláveis, integração de IA em produção e cloud (Next.js, NestJS, Node.js, TypeScript, AWS). Entre os projetos, idealizou e desenvolveu o CESBE HUB — plataforma corporativa com IA (assistente OpenAI/GPT e OCR de notas fiscais) integrada ao ERP Sapiens.",
@@ -14,6 +14,8 @@ export const siteConfig = {
   linkedin: "https://www.linkedin.com/in/fabio-h-ferreira-zi",
   // Substitua o arquivo em public/ pelo seu currículo real (mesmo nome).
   resumeUrl: "/CV-FabioHenrique.pdf",
+  // Google Search Console — token da verificação por "tag HTML" (propriedade de prefixo de URL).
+  googleSiteVerification: "UsK6w7eeog1WNbFjytd2X9yvKwkBnQ0bNJdpCs0qvYA",
   keywords: [
     // Pessoa (foco principal)
     "Fábio Henrique Ferreira",
