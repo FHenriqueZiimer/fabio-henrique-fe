@@ -39,9 +39,10 @@ const pt = {
     lead: "Tecnologias e domínios que uso para construir produtos escaláveis, integrar sistemas corporativos e automatizar processos com IA.",
     groups: [
       { title: "Frontend", items: ["Next.js", "React.js", "React Native", "Vue.js", "Material UI", "JavaScript"] },
-      { title: "Backend", items: ["NestJS", "Node.js", "TypeScript", "APIs REST", "TypeORM", "PHP"] },
-      { title: "Dados & Cloud", items: ["AWS", "MongoDB", "MySQL", "PostgreSQL", "Docker", "AWS Textract"] },
-      { title: "Arquitetura & IA", items: ["Arquitetura de Soluções", "Microsserviços", "Integração com ERP", "OpenAI", "Automação de processos", "CI/CD"] },
+      { title: "Backend", items: ["NestJS", "Node.js", "TypeScript", "APIs REST", "TypeORM", "MongoDB", "PostgreSQL"] },
+      { title: "Cloud & DevOps", items: ["AWS", "Docker", "CI/CD", "GitHub Actions", "Jest", "Cypress", "Vercel"] },
+      { title: "Arquitetura & Liderança", items: ["Arquitetura de Soluções", "Soluções escaláveis", "Análise de trade-offs (prós e contras)", "Tomada de decisão", "Mentoria de juniores", "Code review"] },
+      { title: "IA & Integrações", items: ["OpenAI", "AWS Textract", "Automação com IA", "Integração com ERP", "Microsserviços", "APIs REST"] },
     ],
   },
   cesbeHub: {
@@ -147,9 +148,9 @@ const pt = {
   cicd: {
     eyebrow: "Engenharia · DevOps",
     title: "CI/CD & Deploy",
-    summary: "No CESBE HUB, construí pipelines de CI/CD com ambientes isolados (HML/PRD), deploy dockerizado e checagem de qualidade automática antes do merge.",
-    highlights: ["Deploy contínuo na Vercel, com preview por PR", "GitHub Actions + Docker + deploy remoto via AWS SSM", "Qualidade automatizada com Husky, ESLint e Jest"],
-    tools: ["Vercel", "GitHub Actions", "Docker", "AWS SSM", "Husky", "ESLint", "Jest", "Capacitor"],
+    summary: "Eu construí os pipelines de CI/CD do Hub — ambientes isolados (HML/PRD), deploy dockerizado e checagem de qualidade automática antes do merge.",
+    highlights: ["Deploy contínuo na Vercel, com preview por PR", "GitHub Actions + Docker + deploy remoto via AWS SSM", "Testes automatizados (Jest e Cypress) e lint no pré-commit (Husky)"],
+    tools: ["Vercel", "GitHub Actions", "Docker", "AWS SSM", "Husky", "ESLint", "Jest", "Cypress", "Capacitor"],
   },
   experience: {
     eyebrow: "Trajetória",
@@ -281,9 +282,10 @@ const en: Dict = {
     lead: "Technologies and domains I use to build scalable products, integrate enterprise systems and automate processes with AI.",
     groups: [
       { title: "Frontend", items: ["Next.js", "React.js", "React Native", "Vue.js", "Material UI", "JavaScript"] },
-      { title: "Backend", items: ["NestJS", "Node.js", "TypeScript", "REST APIs", "TypeORM", "PHP"] },
-      { title: "Data & Cloud", items: ["AWS", "MongoDB", "MySQL", "PostgreSQL", "Docker", "AWS Textract"] },
-      { title: "Architecture & AI", items: ["Solutions Architecture", "Microservices", "ERP Integration", "OpenAI", "Process Automation", "CI/CD"] },
+      { title: "Backend", items: ["NestJS", "Node.js", "TypeScript", "REST APIs", "TypeORM", "MongoDB", "PostgreSQL"] },
+      { title: "Cloud & DevOps", items: ["AWS", "Docker", "CI/CD", "GitHub Actions", "Jest", "Cypress", "Vercel"] },
+      { title: "Architecture & Leadership", items: ["Solutions Architecture", "Scalable solutions", "Trade-off analysis (pros & cons)", "Decision making", "Mentoring juniors", "Code review"] },
+      { title: "AI & Integrations", items: ["OpenAI", "AWS Textract", "AI Automation", "ERP Integration", "Microservices", "REST APIs"] },
     ],
   },
   cesbeHub: {
@@ -389,9 +391,9 @@ const en: Dict = {
   cicd: {
     eyebrow: "Engineering · DevOps",
     title: "CI/CD & Deploy",
-    summary: "On CESBE HUB, I built CI/CD pipelines with isolated environments (staging/production), dockerized deploys and automatic quality checks before merge.",
-    highlights: ["Continuous deploy on Vercel, with per-PR previews", "GitHub Actions + Docker + remote deploy via AWS SSM", "Automated quality with Husky, ESLint and Jest"],
-    tools: ["Vercel", "GitHub Actions", "Docker", "AWS SSM", "Husky", "ESLint", "Jest", "Capacitor"],
+    summary: "I built the Hub's CI/CD pipelines — isolated environments (staging/production), dockerized deploys and automatic quality checks before merge.",
+    highlights: ["Continuous deploy on Vercel, with per-PR previews", "GitHub Actions + Docker + remote deploy via AWS SSM", "Automated tests (Jest and Cypress) and lint on pre-commit (Husky)"],
+    tools: ["Vercel", "GitHub Actions", "Docker", "AWS SSM", "Husky", "ESLint", "Jest", "Cypress", "Capacitor"],
   },
   experience: {
     eyebrow: "Career",

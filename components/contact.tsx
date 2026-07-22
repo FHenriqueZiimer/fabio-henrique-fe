@@ -71,9 +71,6 @@ export function Contact() {
             </div>
 
             <div className="flex items-center justify-between gap-3 border-t border-border pt-4">
-              <span className="text-[13.5px] font-medium text-muted">
-                {contact.linkedinTitle}
-              </span>
               <span className="inline-flex items-center gap-1.5 rounded-lg bg-accent px-4 py-2 text-[13.5px] font-medium text-accent-foreground transition-opacity group-hover:opacity-85">
                 {contact.linkedinCta}
                 <span aria-hidden="true">↗</span>

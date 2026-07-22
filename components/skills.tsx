@@ -13,7 +13,7 @@ export function Skills() {
         <h2 className="section-title">{skills.title}</h2>
         <p className="section-lead">{skills.lead}</p>
 
-        <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-16 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
           {skills.groups.map((group) => (
             <div key={group.title} className="border-t border-border pt-6">
               <h3 className="mb-[18px] text-[13px] font-semibold uppercase tracking-[0.08em] text-faint">

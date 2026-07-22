@@ -24,6 +24,10 @@ export const siteConfig = {
     "Arquiteto de Soluções",
     "desenvolvedor Full Stack",
     "desenvolvedor em Curitiba",
+    "arquitetura de software escalável",
+    "tomada de decisão técnica",
+    "mentoria de desenvolvedores juniores",
+    "code review",
     // Habilidades / IA (do profissional)
     "integração de IA em produção",
     "automação de processos com IA",
@@ -31,6 +35,7 @@ export const siteConfig = {
     "assistente com OpenAI / GPT",
     "OCR de notas fiscais com IA",
     "integração com ERP",
+    "testes automatizados (Jest, Cypress)",
     "desenvolvimento seguro",
     // Stack
     "Next.js",

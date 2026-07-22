@@ -138,6 +138,38 @@ export function CesbeHub() {
 
           <hr className="my-7 border-t border-border" />
 
+          {/* CI/CD — feito por mim, dentro do projeto */}
+          <div>
+            <h3 className="text-xs font-semibold uppercase tracking-[0.1em] text-faint">
+              {t.cicd.title}
+            </h3>
+            <p className="mt-2 max-w-measure text-[13.5px] leading-[1.6] text-muted">
+              {t.cicd.summary}
+            </p>
+            <div className="mt-4 grid gap-3 sm:grid-cols-3">
+              {t.cicd.highlights.map((h) => (
+                <div key={h} className="flex gap-2.5">
+                  <span
+                    className="mt-[3px] grid h-4 w-4 shrink-0 place-items-center rounded-full bg-accent text-[9px] text-accent-foreground"
+                    aria-hidden="true"
+                  >
+                    ✓
+                  </span>
+                  <p className="text-[13px] leading-[1.45] text-foreground">{h}</p>
+                </div>
+              ))}
+            </div>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              {t.cicd.tools.map((tool) => (
+                <li key={tool} className="badge">
+                  {tool}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <hr className="my-7 border-t border-border" />
+
           <div className="flex flex-col gap-4">
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
               <span className="text-xs font-semibold uppercase tracking-[0.1em] text-faint">
