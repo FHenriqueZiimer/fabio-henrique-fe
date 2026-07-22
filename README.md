@@ -19,7 +19,7 @@ npm start         # servir o build
 | O que | Onde |
 |------|------|
 | Nome, e-mail, telefone, domínio, palavras-chave (SEO) | `lib/site.ts` |
-| Textos, experiências, skills, formação, CESBE HUB | `lib/data.ts` |
+| Textos PT **e** EN (experiências, skills, CESBE HUB, etc.) | `lib/content.ts` (`pt` / `en`) |
 | Cores e tema (claro/escuro) | `app/globals.css` (variáveis `:root`) + `tailwind.config.ts` |
 | Currículo (PDF) | `public/CV-FabioHenrique.pdf` (substitua pelo real) |
 | SEO / Open Graph / dados estruturados (JSON-LD) | `app/layout.tsx` |

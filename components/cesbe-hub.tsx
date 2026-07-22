@@ -1,62 +1,63 @@
-import { cesbeHub, security } from "@/lib/data";
+"use client";
+
 import { ModulesCarousel } from "@/components/modules-carousel";
+import { useLang } from "@/components/language-provider";
 
 export function CesbeHub() {
+  const { t } = useLang();
+  const c = t.cesbeHub;
+
   return (
     <section id="cesbe-hub" className="section bg-surface">
       <div className="container-x">
-        <p className="eyebrow">Projeto em destaque</p>
+        <p className="eyebrow">{c.eyebrow}</p>
 
         <h2 className="text-[clamp(1.8rem,4vw,2.5rem)] font-semibold leading-[1.05] tracking-[-0.03em]">
           CESBE HUB
         </h2>
 
         <p className="mt-5 max-w-measure text-[1.05rem] leading-[1.75] text-muted">
-          Plataforma corporativa interna da{" "}
+          {c.lead.pre}
           <a
-            href={cesbeHub.owner.url}
+            href={c.owner.url}
             target="_blank"
             rel="noopener noreferrer"
             className="text-foreground underline decoration-border underline-offset-4 transition-colors hover:decoration-foreground"
           >
-            {cesbeHub.owner.name}
-          </a>{" "}
-          que{" "}
-          <strong className="font-semibold text-foreground">
-            idealizei, arquitetei e desenvolvi
-          </strong>
-          . Centraliza compras, suprimentos, fornecedores, contratos e documentos
-          fiscais, integra-se ao ERP Sapiens e usa IA para acelerar decisões — reduzindo
-          retrabalho e aumentando a rastreabilidade.
+            {c.owner.name}
+          </a>
+          {c.lead.mid}
+          <strong className="font-semibold text-foreground">{c.lead.strong}</strong>
+          {c.lead.post}
         </p>
 
         <div className="mt-7 flex flex-wrap gap-2.5">
           <a
-            href={cesbeHub.site}
+            href={c.site}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 rounded-full bg-accent px-4 py-[7px] text-[13.5px] font-medium text-accent-foreground transition-opacity hover:opacity-85"
           >
-            Visitar cesbehub.com.br
+            {c.visitLabel}
             <span aria-hidden="true">↗</span>
           </a>
           <span className="inline-flex items-center gap-2.5 rounded-full border border-border bg-background py-[7px] pl-2 pr-4 text-[13.5px] font-medium text-foreground">
             <span className="grid h-[26px] w-[26px] place-items-center rounded-full bg-accent text-xs font-semibold text-accent-foreground">
               1º
             </span>
-            Semana da Qualidade 2025
+            {c.awardLabel}
           </span>
           <a
-            href={cesbeHub.presentedAt.href}
+            href={c.presentedHref}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center rounded-full border border-border bg-background px-4 py-[7px] text-[13.5px] font-medium text-foreground transition-colors hover:border-border-strong"
           >
-            Apresentado no INBRASC
+            {c.presentedLabel}
             <span className="ml-1.5 text-faint" aria-hidden="true">↗</span>
           </a>
           <a
-            href={security.aikido.href}
+            href={t.security.aikido.href}
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 rounded-full border border-border bg-background px-4 py-[7px] text-[13.5px] font-medium text-foreground transition-colors hover:border-border-strong"
@@ -75,16 +76,15 @@ export function CesbeHub() {
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z" />
               <path d="m9 12 2 2 4-4" />
             </svg>
-            Avaliado pela Aikido
+            {c.aikidoLabel}
             <span className="text-faint" aria-hidden="true">↗</span>
           </a>
         </div>
 
         {/* Painel único: agrupa todos os detalhes do mesmo projeto */}
         <div className="mt-8 rounded-xl border border-border bg-background p-5 sm:p-8">
-          {/* Destaques */}
           <div className="grid gap-3 sm:grid-cols-3">
-            {cesbeHub.highlights.map((h) => (
+            {c.highlights.map((h) => (
               <div key={h} className="flex gap-3">
                 <span
                   className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-accent text-[10px] text-accent-foreground"
@@ -99,18 +99,20 @@ export function CesbeHub() {
 
           <hr className="my-7 border-t border-border" />
 
-          {/* Módulos */}
-          <ModulesCarousel modules={cesbeHub.modules} />
+          <ModulesCarousel
+            modules={c.modules}
+            label={c.modulesLabel}
+            hint={c.modulesHint}
+          />
 
           <hr className="my-7 border-t border-border" />
 
-          {/* IA */}
           <div>
             <h3 className="text-xs font-semibold uppercase tracking-[0.1em] text-faint">
-              IA aplicada
+              {c.aiLabel}
             </h3>
             <div className="mt-4 grid gap-3 md:grid-cols-2">
-              {cesbeHub.ai.map(
+              {c.ai.map(
                 (a: { name: string; description: string; impact?: string }) => (
                   <article
                     key={a.name}
@@ -136,28 +138,27 @@ export function CesbeHub() {
 
           <hr className="my-7 border-t border-border" />
 
-          {/* Transversais + Stack */}
           <div className="flex flex-col gap-4">
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
               <span className="text-xs font-semibold uppercase tracking-[0.1em] text-faint">
-                Transversais
+                {c.crosscuttingLabel}
               </span>
               <ul className="flex flex-wrap gap-2">
-                {cesbeHub.crosscutting.map((c) => (
-                  <li key={c} className="badge">
-                    {c}
+                {c.crosscutting.map((item) => (
+                  <li key={item} className="badge">
+                    {item}
                   </li>
                 ))}
               </ul>
             </div>
             <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
               <span className="text-xs font-semibold uppercase tracking-[0.1em] text-faint">
-                Stack
+                {c.stackLabel}
               </span>
               <ul className="flex flex-wrap gap-2">
-                {cesbeHub.stack.map((t) => (
-                  <li key={t} className="badge">
-                    {t}
+                {c.stack.map((tech) => (
+                  <li key={tech} className="badge">
+                    {tech}
                   </li>
                 ))}
               </ul>

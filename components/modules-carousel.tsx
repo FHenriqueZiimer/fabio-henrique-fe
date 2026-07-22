@@ -10,7 +10,15 @@ type Module = {
   impact?: string;
 };
 
-export function ModulesCarousel({ modules }: { modules: readonly Module[] }) {
+export function ModulesCarousel({
+  modules,
+  label,
+  hint,
+}: {
+  modules: readonly Module[];
+  label: string;
+  hint: string;
+}) {
   const trackRef = useRef<HTMLDivElement>(null);
 
   function scroll(dir: 1 | -1) {
@@ -24,9 +32,9 @@ export function ModulesCarousel({ modules }: { modules: readonly Module[] }) {
       <div className="flex items-end justify-between gap-4">
         <div>
           <h3 className="text-xs font-semibold uppercase tracking-[0.1em] text-faint">
-            Módulos &amp; fluxos
+            {label}
           </h3>
-          <p className="mt-1 text-[13px] text-muted">Arraste para o lado para explorar.</p>
+          <p className="mt-1 text-[13px] text-muted">{hint}</p>
         </div>
         <div className="hidden gap-2 sm:flex">
           <button

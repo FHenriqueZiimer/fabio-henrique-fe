@@ -3,17 +3,20 @@
 import { useEffect, useState } from "react";
 import { siteConfig } from "@/lib/site";
 import { ThemeToggle } from "@/components/theme-toggle";
-
-const links = [
-  { href: "#sobre", label: "Sobre" },
-  { href: "#seguranca", label: "Segurança" },
-  { href: "#experiencia", label: "Experiência" },
-  { href: "#formacao", label: "Formação" },
-];
+import { LanguageToggle } from "@/components/language-toggle";
+import { useLang } from "@/components/language-provider";
 
 export function Navbar() {
+  const { t } = useLang();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
+
+  const links = [
+    { href: "#sobre", label: t.nav.about },
+    { href: "#seguranca", label: t.nav.security },
+    { href: "#experiencia", label: t.nav.experience },
+    { href: "#formacao", label: t.nav.education },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -45,20 +48,21 @@ export function Navbar() {
           ))}
         </nav>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2.5">
+          <LanguageToggle />
           <ThemeToggle />
           <a
             href={siteConfig.resumeUrl}
             download
-            className="hidden text-[13.5px] font-medium text-muted transition-colors hover:text-foreground md:inline-flex"
+            className="hidden text-[13.5px] font-medium text-muted transition-colors hover:text-foreground lg:inline-flex"
           >
-            Currículo
+            {t.nav.resume}
           </a>
           <a
             href="#contato"
             className="hidden rounded-lg bg-accent px-4 py-2 text-[13.5px] font-medium text-accent-foreground transition-opacity hover:opacity-85 md:inline-flex"
           >
-            Contato
+            {t.nav.contact}
           </a>
           <button
             type="button"
@@ -93,7 +97,7 @@ export function Navbar() {
           className="flex flex-col border-b border-border bg-background px-[22px] pb-4 pt-1 md:hidden"
           aria-label="Navegação mobile"
         >
-          {[...links, { href: "#contato", label: "Contato" }].map((l) => (
+          {[...links, { href: "#contato", label: t.nav.contact }].map((l) => (
             <a
               key={l.href}
               href={l.href}
@@ -109,7 +113,7 @@ export function Navbar() {
             className="py-[13px] text-[15px] font-medium"
             onClick={() => setOpen(false)}
           >
-            Baixar currículo
+            {t.nav.resumeMobile}
           </a>
         </nav>
       )}

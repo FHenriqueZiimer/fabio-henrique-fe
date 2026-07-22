@@ -1,11 +1,16 @@
-import { security } from "@/lib/data";
+"use client";
+
+import { useLang } from "@/components/language-provider";
 
 export function Security() {
+  const { t } = useLang();
+  const security = t.security;
+
   return (
     <section id="seguranca" className="section">
       <div className="container-x">
-        <p className="eyebrow">Segurança</p>
-        <h2 className="section-title">Desenvolvimento seguro</h2>
+        <p className="eyebrow">{security.eyebrow}</p>
+        <h2 className="section-title">{security.title}</h2>
         <p className="section-lead">{security.lead}</p>
 
         <div className="mt-16 grid grid-cols-1 gap-px overflow-hidden rounded border border-border bg-border sm:grid-cols-2">
@@ -39,10 +44,8 @@ export function Security() {
               <path d="m9 12 2 2 4-4" />
             </svg>
           </span>
-          <span className="flex-1 min-w-[200px]">
-            <span className="block text-[15px] font-semibold">
-              {security.aikido.label}
-            </span>
+          <span className="min-w-[200px] flex-1">
+            <span className="block text-[15px] font-semibold">{security.aikido.label}</span>
             <span className="mt-0.5 block text-sm leading-[1.6] text-muted">
               {security.aikido.detail}
             </span>

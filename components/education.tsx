@@ -1,15 +1,20 @@
-import { education, certifications, languages } from "@/lib/data";
+"use client";
+
+import { useLang } from "@/components/language-provider";
 
 export function Education() {
+  const { t } = useLang();
+  const edu = t.education;
+
   return (
     <section id="formacao" className="section">
       <div className="container-x">
-        <p className="eyebrow">Formação</p>
-        <h2 className="section-title">Educação, certificações e idiomas</h2>
+        <p className="eyebrow">{edu.eyebrow}</p>
+        <h2 className="section-title">{edu.title}</h2>
 
         <div className="mt-16 grid grid-cols-1 items-start gap-12 md:grid-cols-[1.5fr_1fr] md:gap-14">
           <div className="flex flex-col">
-            {education.map((ed) => (
+            {edu.items.map((ed) => (
               <article
                 key={ed.school}
                 className="border-t border-border py-8 first:border-t-0 first:pt-0"
@@ -20,9 +25,7 @@ export function Education() {
                   </h3>
                   <span className="text-[13px] text-faint">{ed.period}</span>
                 </div>
-                <p className="mt-1.5 text-[14.5px] font-medium text-muted">
-                  {ed.degree}
-                </p>
+                <p className="mt-1.5 text-[14.5px] font-medium text-muted">{ed.degree}</p>
                 <p className="mt-3.5 text-[14.5px] leading-[1.7] text-muted">
                   {ed.description}
                 </p>
@@ -33,20 +36,20 @@ export function Education() {
           <aside className="flex flex-col gap-6">
             <div className="rounded border border-border bg-background p-7">
               <h3 className="mb-2 text-xs font-semibold uppercase tracking-[0.1em] text-faint">
-                Certificações
+                {edu.certificationsLabel}
               </h3>
               <ul>
-                {certifications.map((c) => (
+                {edu.certifications.map((cert) => (
                   <li
-                    key={c.name}
+                    key={cert.name}
                     className="flex items-center justify-between gap-3 border-t border-border py-4"
                   >
                     <div className="flex flex-col">
-                      <strong className="text-[14.5px] font-medium">{c.name}</strong>
-                      <span className="text-[13px] text-faint">{c.issuer}</span>
+                      <strong className="text-[14.5px] font-medium">{cert.name}</strong>
+                      <span className="text-[13px] text-faint">{cert.issuer}</span>
                     </div>
                     <span className="whitespace-nowrap text-[12.5px] text-muted">
-                      {c.date}
+                      {cert.date}
                     </span>
                   </li>
                 ))}
@@ -55,17 +58,17 @@ export function Education() {
 
             <div className="rounded border border-border bg-background p-7">
               <h3 className="mb-2 text-xs font-semibold uppercase tracking-[0.1em] text-faint">
-                Idiomas
+                {edu.languagesLabel}
               </h3>
               <ul>
-                {languages.map((l) => (
+                {edu.languages.map((lang) => (
                   <li
-                    key={l.name}
+                    key={lang.name}
                     className="flex items-center justify-between gap-3 border-t border-border py-4"
                   >
-                    <strong className="text-[14.5px] font-medium">{l.name}</strong>
+                    <strong className="text-[14.5px] font-medium">{lang.name}</strong>
                     <span className="whitespace-nowrap text-[12.5px] text-muted">
-                      {l.level}
+                      {lang.level}
                     </span>
                   </li>
                 ))}

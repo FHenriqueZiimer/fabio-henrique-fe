@@ -1,11 +1,16 @@
-import { cicd } from "@/lib/data";
+"use client";
+
+import { useLang } from "@/components/language-provider";
 
 export function Cicd() {
+  const { t } = useLang();
+  const cicd = t.cicd;
+
   return (
     <section id="cicd" className="section bg-surface">
       <div className="container-x">
-        <p className="eyebrow">Engenharia · DevOps</p>
-        <h2 className="section-title">CI/CD &amp; Deploy</h2>
+        <p className="eyebrow">{cicd.eyebrow}</p>
+        <h2 className="section-title">{cicd.title}</h2>
         <p className="section-lead">{cicd.summary}</p>
 
         <div className="mt-12 grid gap-4 sm:grid-cols-3">
@@ -26,9 +31,9 @@ export function Cicd() {
         </div>
 
         <ul className="mt-6 flex flex-wrap gap-2">
-          {cicd.tools.map((t) => (
-            <li key={t} className="badge">
-              {t}
+          {cicd.tools.map((tool) => (
+            <li key={tool} className="badge">
+              {tool}
             </li>
           ))}
         </ul>
