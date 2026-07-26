@@ -4,6 +4,7 @@ import { About } from "@/components/about";
 import { Skills } from "@/components/skills";
 import { Security } from "@/components/security";
 import { CesbeHub } from "@/components/cesbe-hub";
+import { Fros } from "@/components/fros";
 import { Experience } from "@/components/experience";
 import { Education } from "@/components/education";
 import { Contact } from "@/components/contact";
@@ -17,6 +18,7 @@ export default function Home() {
         <Hero />
         <About />
         <CesbeHub />
+        <Fros />
         <Skills />
         <Security />
         <Experience />
