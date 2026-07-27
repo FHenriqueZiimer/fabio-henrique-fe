@@ -34,13 +34,13 @@ export const metadata: Metadata = {
     siteName: `${siteConfig.name} — Portfólio`,
     title: `${siteConfig.name} — ${siteConfig.role}`,
     description: siteConfig.description,
-    // A imagem vem de app/opengraph-image.tsx (gerada dinamicamente).
+    // A imagem vem de app/opengraph-image.png (convenção de arquivo do Next).
   },
   twitter: {
     card: "summary_large_image",
     title: `${siteConfig.name} — ${siteConfig.role}`,
     description: siteConfig.description,
-    // A imagem vem de app/twitter-image.tsx.
+    // O Next preenche twitter:image com o app/opengraph-image.png.
   },
   robots: {
     index: true,
@@ -81,8 +81,10 @@ function StructuredData() {
       addressRegion: "PR",
       addressCountry: "BR",
     },
-    sameAs: [siteConfig.linkedin],
+    sameAs: [siteConfig.linkedin, siteConfig.fros],
     knowsAbout: [
+      "Fros — SaaS multi-tenant de gestão de projetos com IA",
+      "CESBE HUB",
       "Inteligência Artificial aplicada",
       "Integração de IA em produção",
       "Assistentes com LLM (OpenAI / GPT)",
@@ -144,6 +146,36 @@ function StructuredData() {
     award: "1º lugar — Premiação Semana da Qualidade 2025",
   };
 
+  const frosLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": `${siteConfig.url}/#fros`,
+    name: "Fros",
+    alternateName: ["fros.app", "Fros SaaS"],
+    applicationCategory: "BusinessApplication",
+    operatingSystem: "Web",
+    url: siteConfig.fros,
+    creator: { "@id": `${siteConfig.url}/#person` },
+    author: { "@id": `${siteConfig.url}/#person` },
+    description:
+      "Fros é um SaaS multi-tenant idealizado, arquitetado e desenvolvido por Fábio Henrique Ferreira. Reúne portal do cliente (Fros Bridge), roadmap público, quadro Scrum/Kanban com SLA e a assistente de IA Lyra, que faz triagem, rascunha cards e estima prazos.",
+    featureList: [
+      "Portal do cliente (Fros Bridge): registrar, votar e comentar pedidos",
+      "Quadro Scrum/Kanban com SLA por prioridade e por empresa cliente",
+      "Lyra (IA): triagem automática, rascunho de cards e estimativa de prazos",
+      "Multi-tenant por banco — isolamento real entre clientes",
+      "Anexos em S3 privado com upload direto por URLs assinadas",
+      "Colunas, tipos de item e campos configuráveis por projeto",
+    ],
+    keywords:
+      "Fros, fros.app, SaaS de gestão de projetos, portal do cliente, roadmap público, Scrum, Kanban, SLA, assistente de IA Lyra, multi-tenant, Next.js, NestJS, MongoDB",
+    offers: {
+      "@type": "Offer",
+      category: "SaaS",
+      priceCurrency: "BRL",
+    },
+  };
+
   const websiteLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -164,6 +196,10 @@ function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(projectLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(frosLd) }}
       />
       <script
         type="application/ld+json"
