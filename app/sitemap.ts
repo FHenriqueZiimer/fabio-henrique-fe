@@ -2,28 +2,13 @@ import type { MetadataRoute } from "next";
 import { siteConfig } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const lastModified = new Date();
-
   return [
     {
       url: siteConfig.url,
-      lastModified,
+      // Data sem hora: é o formato que o Google recomenda e o que todo CMS emite.
+      lastModified: new Date().toISOString().slice(0, 10),
       changeFrequency: "monthly",
       priority: 1,
-    },
-    {
-      // O Google indexa PDFs — é o resultado que ranqueia para "currículo Fábio Henrique".
-      url: `${siteConfig.url}${siteConfig.resumeUrl}`,
-      lastModified,
-      changeFrequency: "yearly",
-      priority: 0.5,
-    },
-    {
-      // Resumo em markdown para crawlers de LLM (padrão llms.txt).
-      url: `${siteConfig.url}/llms.txt`,
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.5,
     },
   ];
 }
