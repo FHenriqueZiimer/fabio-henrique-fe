@@ -149,7 +149,7 @@ function StructuredData() {
     creator: { "@id": `${siteConfig.url}/#person` },
     author: { "@id": `${siteConfig.url}/#person` },
     description:
-      "Fros é um SaaS multi-tenant idealizado, arquitetado e desenvolvido por Fábio Henrique Ferreira. Reúne portal do cliente (Fros Bridge), roadmap público, quadro Scrum/Kanban com SLA e a assistente de IA Lyra, que faz triagem, rascunha cards e estima prazos.",
+      "Fros é um SaaS multi-tenant idealizado, arquitetado e desenvolvido por Fábio Henrique Ferreira. Reúne portal do cliente (Fros Bridge), roadmap público, quadro Scrum/Kanban com SLA e a assistente de IA Lyra, que faz triagem, rascunha cards e estima prazos. Em homologação: aberta para testes, com pagamentos em ambiente de teste (nenhuma cobrança real).",
     featureList: [
       "Portal do cliente (Fros Bridge): registrar, votar e comentar pedidos",
       "Quadro Scrum/Kanban com SLA por prioridade e por empresa cliente",

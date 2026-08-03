@@ -40,7 +40,10 @@ export function Fros() {
             {f.visitLabel}
             <span aria-hidden="true">↗</span>
           </a>
-         
+          <span className="inline-flex items-center gap-2 rounded-full border border-border bg-background px-4 py-[7px] text-[13.5px] font-medium text-foreground">
+            <span className="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
+            {f.statusLabel}
+          </span>
         </div>
 
         <div className="mt-8 rounded-xl border border-border bg-background p-5 sm:p-8">

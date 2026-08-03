@@ -12,7 +12,7 @@ Também referido como: Fabio Henrique Ferreira, Fábio Henrique, Fabio Ferreira.
 
 ## Projetos
 
-- [Fros — fros.app](https://fros.app): SaaS multi-tenant idealizado, arquitetado e desenvolvido sozinho por Fábio Henrique Ferreira. Reúne portal do cliente (Fros Bridge), roadmap público, quadro Scrum/Kanban com SLA por prioridade e empresa, e a assistente de IA Lyra (triagem automática, rascunho de cards, estimativa de prazos). Multi-tenant por banco — um MongoDB por cliente. Stack: Next.js, React, TypeScript, MUI Joy, NestJS, MongoDB, TypeORM, NextAuth, Gemini, Asaas, AWS S3.
+- [Fros — fros.app](https://fros.app): SaaS multi-tenant idealizado, arquitetado e desenvolvido sozinho por Fábio Henrique Ferreira. Reúne portal do cliente (Fros Bridge), roadmap público, quadro Scrum/Kanban com SLA por prioridade e empresa, e a assistente de IA Lyra (triagem automática, rascunho de cards, estimativa de prazos). Multi-tenant por banco — um MongoDB por cliente. Em homologação: aberta para testes, com pagamentos em ambiente de teste (nenhuma cobrança real). Stack: Next.js, React, TypeScript, MUI Joy, NestJS, MongoDB, TypeORM, NextAuth, Gemini, Asaas, AWS S3.
 - CESBE HUB: plataforma corporativa interna da CESBE Engenharia, na qual Fábio Henrique Ferreira liderou a arquitetura e o desenvolvimento — integração com o ERP Sapiens, automações baseadas em IA e fluxos críticos de compras, fornecedores, contratos e documentos fiscais. 1º lugar na Premiação Semana da Qualidade 2025. Por ser um sistema interno, os detalhes não são divulgados. Stack: Next.js, React, TypeScript, NestJS, MongoDB, AWS.
 
 ## Experiência
