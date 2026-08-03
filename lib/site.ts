@@ -7,7 +7,7 @@ export const siteConfig = {
   url: "https://fabio-henrique-fe.vercel.app",
   locale: "pt-BR",
   description:
-    "Fábio Henrique Ferreira — Engenheiro de Software e Arquiteto de Soluções com mais de 7 anos de experiência, especializado em sistemas escaláveis, integração de IA em produção e cloud (Next.js, NestJS, Node.js, TypeScript, AWS). Criador da Fros (fros.app), SaaS multi-tenant de gestão de projetos com IA, e idealizador do CESBE HUB — plataforma corporativa com IA (assistente OpenAI/GPT e OCR de notas fiscais) integrada ao ERP Sapiens.",
+    "Fábio Henrique Ferreira — Engenheiro de Software e Arquiteto de Soluções com mais de 7 anos de experiência, especializado em sistemas escaláveis, integração de IA em produção e cloud (Next.js, NestJS, Node.js, TypeScript, AWS). Criador da Fros (fros.app), SaaS multi-tenant de gestão de projetos com IA, e líder da arquitetura e do desenvolvimento do CESBE HUB — plataforma corporativa interna com integração a ERP e automações baseadas em IA.",
   email: "fabohenrique@live.com",
   phone: "+55 41 99960-2859",
   location: "Curitiba, Paraná, Brasil",
@@ -60,7 +60,6 @@ export const siteConfig = {
     "Lyra IA",
     "CESBE HUB",
     "CESBE Engenharia",
-    "criador do CESBE HUB",
   ],
 } as const;
 

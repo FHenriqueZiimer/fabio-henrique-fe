@@ -123,7 +123,6 @@ function StructuredData() {
     name: "CESBE HUB",
     applicationCategory: "BusinessApplication",
     operatingSystem: "Web",
-    url: "https://cesbehub.com.br/",
     creator: { "@id": `${siteConfig.url}/#person` },
     author: { "@id": `${siteConfig.url}/#person` },
     publisher: {
@@ -132,17 +131,9 @@ function StructuredData() {
       url: "https://cesbeengenharia.com.br/",
     },
     description:
-      "Plataforma corporativa interna da CESBE Engenharia, idealizada e desenvolvida por Fábio Henrique Ferreira. Usa inteligência artificial — assistente com OpenAI/GPT que lê PDFs e anexos, OCR e extração de dados de notas fiscais, e detecção de duplicidade por similaridade — integrada ao ERP Sapiens para automatizar compras, suprimentos, contratos e documentos fiscais.",
-    featureList: [
-      "Assistente de IA (OpenAI/GPT) que lê PDFs e anexos, inclusive escaneados",
-      "OCR e extração estruturada de dados de notas fiscais com IA",
-      "Detecção de duplicidade de cadastros por similaridade com IA",
-      "Automação de suprimentos e requisições de compra",
-      "Integração em tempo real com o ERP Sapiens via SOAP",
-      "Gestão de contratos, fornecedores e documentos fiscais",
-    ],
+      "Plataforma corporativa interna da CESBE Engenharia. Fábio Henrique Ferreira liderou a arquitetura e o desenvolvimento — integração com o ERP Sapiens, automações baseadas em IA e fluxos críticos de compras, fornecedores, contratos e documentos fiscais. Sistema interno: detalhes não divulgados.",
     keywords:
-      "CESBE HUB, inteligência artificial, IA em compras e suprimentos, assistente com OpenAI GPT, OCR de notas fiscais com IA, detecção de duplicidade com IA, automação de suprimentos, integração ERP Sapiens, Next.js, NestJS",
+      "CESBE HUB, inteligência artificial aplicada, automação com IA, integração com ERP, arquitetura de software, Next.js, NestJS",
     award: "1º lugar — Premiação Semana da Qualidade 2025",
   };
 

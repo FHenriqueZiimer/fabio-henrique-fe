@@ -1,6 +1,6 @@
 # Fábio Henrique Ferreira
 
-> Engenheiro de Software e Arquiteto de Soluções brasileiro, baseado em Curitiba (PR), com mais de 7 anos de experiência em sistemas escaláveis, integrações corporativas e integração de inteligência artificial em produção. Criador da Fros (fros.app), SaaS multi-tenant de gestão de projetos com IA, e idealizador do CESBE HUB, plataforma corporativa da CESBE Engenharia integrada ao ERP Sapiens.
+> Engenheiro de Software e Arquiteto de Soluções brasileiro, baseado em Curitiba (PR), com mais de 7 anos de experiência em sistemas escaláveis, integrações corporativas e integração de inteligência artificial em produção. Criador da Fros (fros.app), SaaS multi-tenant de gestão de projetos com IA, e idealizador do CESBE HUB, plataforma corporativa interna da CESBE Engenharia.
 
 Também referido como: Fabio Henrique Ferreira, Fábio Henrique, Fabio Ferreira.
 
@@ -13,11 +13,11 @@ Também referido como: Fabio Henrique Ferreira, Fábio Henrique, Fabio Ferreira.
 ## Projetos
 
 - [Fros — fros.app](https://fros.app): SaaS multi-tenant idealizado, arquitetado e desenvolvido sozinho por Fábio Henrique Ferreira. Reúne portal do cliente (Fros Bridge), roadmap público, quadro Scrum/Kanban com SLA por prioridade e empresa, e a assistente de IA Lyra (triagem automática, rascunho de cards, estimativa de prazos). Multi-tenant por banco — um MongoDB por cliente. Stack: Next.js, React, TypeScript, MUI Joy, NestJS, MongoDB, TypeORM, NextAuth, Gemini, Asaas, AWS S3.
-- [CESBE HUB](https://cesbehub.com.br/): plataforma corporativa interna da CESBE Engenharia, idealizada, arquitetada e desenvolvida por Fábio Henrique Ferreira. Centraliza compras, suprimentos, fornecedores, contratos e documentos fiscais, com integração SOAP em tempo real ao ERP Sapiens (Senior). IA em produção: assistente OpenAI/GPT que lê PDFs e anexos escaneados, OCR que extrai emitente/CNPJ/valores de notas fiscais e boletos, e detecção de duplicidade de cadastros por score de similaridade. 1º lugar na Premiação Semana da Qualidade 2025. Stack: Next.js, React, TypeScript, MUI, NestJS, MongoDB, TypeORM, NextAuth (Azure AD + 2FA), AWS (S3/SQS/Lambda), OpenAI.
+- CESBE HUB: plataforma corporativa interna da CESBE Engenharia, na qual Fábio Henrique Ferreira liderou a arquitetura e o desenvolvimento — integração com o ERP Sapiens, automações baseadas em IA e fluxos críticos de compras, fornecedores, contratos e documentos fiscais. 1º lugar na Premiação Semana da Qualidade 2025. Por ser um sistema interno, os detalhes não são divulgados. Stack: Next.js, React, TypeScript, NestJS, MongoDB, AWS.
 
 ## Experiência
 
-- Engenheiro de Software — CESBE Engenharia (dez 2024 — atual, Curitiba/PR): responsável técnico por sistemas internos estratégicos; idealizador do CESBE HUB.
+- Engenheiro de Software — CESBE Engenharia (dez 2024 — atual, Curitiba/PR): responsável técnico por sistemas internos estratégicos; idealizador do CESBE HUB (detalhes não divulgados).
 - Desenvolvedor Full Stack — CLAMED Farmácias (dez 2023 — dez 2024, remoto): backoffice, e-commerce e tele-entrega.
 - Desenvolvedor Mobile — Instavagas (2024, freelance): React Native.
 - Desenvolvedor Full Stack — Chaves na Mão (mai 2023 — dez 2023, Curitiba/PR).
