@@ -7,12 +7,13 @@ export const siteConfig = {
   url: "https://fabio-henrique-fe.vercel.app",
   locale: "pt-BR",
   description:
-    "Fábio Henrique Ferreira — Engenheiro de Software e Arquiteto de Soluções com mais de 7 anos de experiência, especializado em sistemas escaláveis, integração de IA em produção e cloud (Next.js, NestJS, Node.js, TypeScript, AWS). Criador da Fros (fros.app), SaaS multi-tenant de gestão de projetos com IA, e líder da arquitetura e do desenvolvimento do CESBE HUB — plataforma corporativa interna com integração a ERP e automações baseadas em IA.",
+    "Fábio Henrique Ferreira — Engenheiro de Software e Arquiteto de Soluções com mais de 7 anos de experiência, especializado em sistemas escaláveis, integração de IA em produção e cloud (Next.js, NestJS, Node.js, TypeScript, AWS). Criador da Fros (fros.app), do Garim (garim-front.vercel.app) e líder da arquitetura e do desenvolvimento do CESBE HUB — plataforma corporativa interna com integração a ERP e automações baseadas em IA.",
   email: "fabohenrique@live.com",
   phone: "+55 41 99960-2859",
   location: "Curitiba, Paraná, Brasil",
   linkedin: "https://www.linkedin.com/in/fabio-h-ferreira-zi",
   fros: "https://fros.app",
+  garim: "https://garim-front.vercel.app",
   // Substitua o arquivo em public/ pelo seu currículo real (mesmo nome).
   resumeUrl: "/CV-FabioHenrique.pdf",
   // Google Search Console — token da verificação por "tag HTML" (propriedade de prefixo de URL).
@@ -60,6 +61,14 @@ export const siteConfig = {
     "Lyra IA",
     "CESBE HUB",
     "CESBE Engenharia",
+    "Garim",
+    "Garim marketplace",
+    "garim-front",
+    "garim-front.vercel.app",
+    "criador do Garim",
+    "marketplace de segunda mão",
+    "brechó online",
+    "PWA",
   ],
 } as const;
 

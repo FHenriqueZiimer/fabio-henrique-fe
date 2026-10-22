@@ -81,9 +81,10 @@ function StructuredData() {
       addressRegion: "PR",
       addressCountry: "BR",
     },
-    sameAs: [siteConfig.linkedin, siteConfig.fros],
+    sameAs: [siteConfig.linkedin, siteConfig.fros, siteConfig.garim],
     knowsAbout: [
       "Fros — SaaS multi-tenant de gestão de projetos com IA",
+      "Garim — Vitrine PWA e plataforma de descoberta para lojas independentes e peças de segunda mão",
       "CESBE HUB",
       "Inteligência Artificial aplicada",
       "Integração de IA em produção",
@@ -167,6 +168,30 @@ function StructuredData() {
     },
   };
 
+  const garimLd = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": `${siteConfig.url}/#garim`,
+    name: "Garim",
+    alternateName: ["garim-front", "Garim App"],
+    applicationCategory: "ShoppingApplication",
+    operatingSystem: "Web, Android, iOS",
+    url: siteConfig.garim,
+    creator: { "@id": `${siteConfig.url}/#person` },
+    author: { "@id": `${siteConfig.url}/#person` },
+    description:
+      "Garim é uma vitrine e plataforma PWA voltada à descoberta de peças de segunda mão, roupas vintage e lojas independentes, idealizada e desenvolvida por Fábio Henrique Ferreira. Negociação 100% direta entre comprador e loja, busca por categorias, painel do lojista e verificação documental.",
+    featureList: [
+      "Vitrine e catálogo digital com busca em tempo real e filtros de categorias",
+      "Negociação 100% direta via WhatsApp e canais da loja sem intermediação financeira",
+      "Progressive Web App (PWA) instalável em dispositivos Android e iOS",
+      "Verificação cadastral de documentos (CPF/CNPJ) com selo de loja verificada",
+      "Painel administrativo do lojista para gestão ágil de peças e catálogo",
+    ],
+    keywords:
+      "Garim, marketplace de segunda mão, brechó online, moda circular, PWA, Next.js, NestJS, MongoDB",
+  };
+
   const websiteLd = {
     "@context": "https://schema.org",
     "@type": "WebSite",
@@ -191,6 +216,10 @@ function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(frosLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(garimLd) }}
       />
       <script
         type="application/ld+json"

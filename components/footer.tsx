@@ -20,6 +20,8 @@ export function Footer() {
         <nav className="flex flex-wrap items-center gap-6" aria-label="Rodapé">
           {[
             { href: "#cesbe-hub", label: footer.links.cesbe },
+            { href: "#fros", label: footer.links.fros },
+            { href: "#garim", label: footer.links.garim },
             { href: "#experiencia", label: footer.links.experience },
             { href: "#contato", label: footer.links.contact },
           ].map((l) => (
