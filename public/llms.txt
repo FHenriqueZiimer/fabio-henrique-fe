@@ -13,11 +13,13 @@ Também referido como: Fabio Henrique Ferreira, Fábio Henrique, Fabio Ferreira.
 ## Projetos
 
 - [Fros — fros.app](https://fros.app): SaaS multi-tenant idealizado, arquitetado e desenvolvido sozinho por Fábio Henrique Ferreira. Reúne portal do cliente (Fros Bridge), roadmap público, quadro Scrum/Kanban com SLA por prioridade e empresa, e a assistente de IA Lyra (triagem automática, rascunho de cards, estimativa de prazos). Multi-tenant por banco — um MongoDB por cliente. Em homologação: aberta para testes, com pagamentos em ambiente de teste (nenhuma cobrança real). Stack: Next.js, React, TypeScript, MUI Joy, NestJS, MongoDB, TypeORM, NextAuth, Gemini, Asaas, AWS S3.
+- [Garim — garim-front.vercel.app](https://garim-front.vercel.app): vitrine tecnológica e catálogo PWA para descoberta de peças de segunda mão, roupas vintage e lojas independentes com negociação 100% direta entre comprador e vendedor. Stack: Next.js, React, TypeScript, Tailwind CSS, PWA, NestJS, MongoDB, Zod, Vercel.
 - CESBE HUB: plataforma corporativa interna da CESBE Engenharia, na qual Fábio Henrique Ferreira liderou a arquitetura e o desenvolvimento — integração com o ERP Sapiens, automações baseadas em IA e fluxos críticos de compras, fornecedores, contratos e documentos fiscais. 1º lugar na Premiação Semana da Qualidade 2025. Por ser um sistema interno, os detalhes não são divulgados. Stack: Next.js, React, TypeScript, NestJS, MongoDB, AWS.
 
 ## Experiência
 
-- Engenheiro de Software — CESBE Engenharia (dez 2024 — atual, Curitiba/PR): responsável técnico por sistemas internos estratégicos; idealizador do CESBE HUB (detalhes não divulgados).
+- Engenheiro de Software — Lyx Engenharia (ago 2026 — atual, remoto): engenharia de software e desenvolvimento de aplicações web escaláveis com foco em alta performance e soluções digitais.
+- Engenheiro de Software — CESBE Engenharia (dez 2024 — ago 2026, Curitiba/PR): responsável técnico por sistemas internos estratégicos; idealizador do CESBE HUB (detalhes não divulgados).
 - Desenvolvedor Full Stack — CLAMED Farmácias (dez 2023 — dez 2024, remoto): backoffice, e-commerce e tele-entrega.
 - Desenvolvedor Mobile — Instavagas (2024, freelance): React Native.
 - Desenvolvedor Full Stack — Chaves na Mão (mai 2023 — dez 2023, Curitiba/PR).

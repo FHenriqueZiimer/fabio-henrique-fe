@@ -54,7 +54,10 @@ export const metadata: Metadata = {
     },
   },
   icons: {
-    icon: "/favicon.ico",
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
     apple: "/apple-touch-icon.png",
   },
   verification: {
@@ -104,8 +107,8 @@ function StructuredData() {
     ],
     worksFor: {
       "@type": "Organization",
-      name: "CESBE Engenharia",
-      url: "https://cesbeengenharia.com.br/",
+      name: "Lyx Engenharia",
+      url: "https://www.lyx.com.br/",
     },
     alumniOf: [
       { "@type": "CollegeOrUniversity", name: "PUC Minas" },

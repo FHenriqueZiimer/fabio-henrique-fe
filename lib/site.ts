@@ -61,6 +61,8 @@ export const siteConfig = {
     "Lyra IA",
     "CESBE HUB",
     "CESBE Engenharia",
+    "Lyx",
+    "Lyx Engenharia",
     "Garim",
     "Garim marketplace",
     "garim-front",

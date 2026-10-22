@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="32" height="32">
+  <rect width="32" height="32" rx="7" fill="#0a0a0a" />
+  <rect width="30" height="30" x="1" y="1" rx="6" fill="none" stroke="#262626" stroke-width="1" />
+  <!-- Letter F -->
+  <path d="M7 9h7v2.4H9.5v3.4h3.7v2.4H9.5V23H7V9z" fill="#ffffff" />
+  <!-- Letter H -->
+  <path d="M17 9h2.5v5.8h3V9h2.5v14h-2.5v-5.8h-3V23H17V9z" fill="#ffffff" />
+</svg>

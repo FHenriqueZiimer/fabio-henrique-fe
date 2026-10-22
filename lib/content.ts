@@ -144,14 +144,24 @@ const pt = {
     items: [
       {
         role: "Engenheiro de Software",
+        company: "Lyx Engenharia",
+        url: "https://www.lyx.com.br/",
+        type: "Tempo integral",
+        period: "ago 2026 — atual",
+        location: "Remoto",
+        description: "Engenharia de software e desenvolvimento de aplicações web escaláveis com foco em alta performance e soluções digitais.",
+        stack: ["Next.js", "React", "TypeScript", "Node.js", "NestJS"],
+        featured: true,
+      },
+      {
+        role: "Engenheiro de Software",
         company: "CESBE Engenharia",
         url: "https://cesbeengenharia.com.br/",
         type: "Tempo integral",
-        period: "dez 2024 — atual",
+        period: "dez 2024 — ago 2026",
         location: "Curitiba, PR · Híbrido",
         description: "Responsável técnico pelo desenvolvimento e evolução de sistemas internos estratégicos. Liderei a arquitetura e o desenvolvimento do CESBE HUB, plataforma corporativa com integração ao ERP Sapiens e automações baseadas em IA.",
         stack: ["Next.js", "NestJS", "TypeORM", "MongoDB", "React", "AWS", "OpenAI"],
-        featured: true,
       },
       {
         role: "Desenvolvedor Full Stack",
@@ -373,14 +383,24 @@ const en: Dict = {
     items: [
       {
         role: "Software Engineer",
+        company: "Lyx Engenharia",
+        url: "https://www.lyx.com.br/",
+        type: "Full-time",
+        period: "Aug 2026 — present",
+        location: "Remote",
+        description: "Software engineering and development of scalable web applications focused on high performance and digital solutions.",
+        stack: ["Next.js", "React", "TypeScript", "Node.js", "NestJS"],
+        featured: true,
+      },
+      {
+        role: "Software Engineer",
         company: "CESBE Engenharia",
         url: "https://cesbeengenharia.com.br/",
         type: "Full-time",
-        period: "Dec 2024 — present",
+        period: "Dec 2024 — Aug 2026",
         location: "Curitiba, Brazil · Hybrid",
         description: "Technical lead for the development and evolution of strategic internal systems. Led the architecture and development of CESBE HUB, an enterprise platform with Sapiens ERP integration and AI-based automation.",
         stack: ["Next.js", "NestJS", "TypeORM", "MongoDB", "React", "AWS", "OpenAI"],
-        featured: true,
       },
       {
         role: "Full Stack Developer",
