@@ -6,7 +6,7 @@
 
 Construo produtos digitais, integrações corporativas e automações com IA — do desenho da arquitetura à entrega em produção.
 
-[Portfólio](https://fabio-henrique-fe.vercel.app) · [LinkedIn](https://www.linkedin.com/in/fabio-h-ferreira-zi) · [Contato](mailto:fabohenrique@live.com)
+[Portfólio](https://fabio-henrique-fe.ziim.com.br) · [LinkedIn](https://www.linkedin.com/in/fabio-h-ferreira-zi) · [Contato](mailto:fabohenrique@live.com)
 
 [![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)](https://nextjs.org/) [![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![NestJS](https://img.shields.io/badge/NestJS-E0234E?logo=nestjs&logoColor=white)](https://nestjs.com/) [![AWS](https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=white)](https://aws.amazon.com/)
 

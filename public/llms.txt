@@ -4,7 +4,7 @@
 
 Também referido como: Fabio Henrique Ferreira, Fábio Henrique, Fabio Ferreira.
 
-- Site: https://fabio-henrique-fe.vercel.app
+- Site: https://fabio-henrique-fe.ziim.com.br
 - LinkedIn: https://www.linkedin.com/in/fabio-h-ferreira-zi
 - E-mail: fabohenrique@live.com
 - Localização: Curitiba, Paraná, Brasil
@@ -41,4 +41,4 @@ Também referido como: Fabio Henrique Ferreira, Fábio Henrique, Fabio Ferreira.
 
 ## Opcional
 
-- [Currículo em PDF](https://fabio-henrique-fe.vercel.app/CV-FabioHenrique.pdf)
+- [Currículo em PDF](https://fabio-henrique-fe.ziim.com.br/CV-FabioHenrique.pdf)

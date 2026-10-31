@@ -4,7 +4,7 @@ export const siteConfig = {
   shortName: "Fábio Henrique",
   role: "Engenheiro de Software · Arquiteto de Soluções",
   // URL onde o site está publicado. Troque quando tiver domínio próprio.
-  url: "https://fabio-henrique-fe.vercel.app",
+  url: "https://fabio-henrique-fe.ziim.com.br",
   locale: "pt-BR",
   description:
     "Fábio Henrique Ferreira — Engenheiro de Software e Arquiteto de Soluções com mais de 7 anos de experiência, especializado em sistemas escaláveis, integração de IA em produção e cloud (Next.js, NestJS, Node.js, TypeScript, AWS). Criador da Fros (fros.app), do Garim (garim-front.vercel.app) e líder da arquitetura e do desenvolvimento do CESBE HUB — plataforma corporativa interna com integração a ERP e automações baseadas em IA.",
